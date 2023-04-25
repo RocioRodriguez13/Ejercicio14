@@ -27,27 +27,22 @@ public class Ejemplo {
                 System.out.println(resultSet.getInt(1) + "\t " + resultSet.getInt(2) + "\t" + resultSet.getString(3) + "\t" + resultSet.getString(4) + "\t " + resultSet.getString(5) + "\t" + resultSet.getString(6)+"\t" );
                 
                 
-//	        String insertarDB = "insert into `qatar`.`empleado`  values ('6', '33224', 'Azul', 'Martinez', 'Argentina', 'Sistemas')";
-//                stmt.executeUpdate(insertarDB);
-//                System.out.println("Datos insertados correctamentes");
-//
-//                insertarDB = "update departamento set nomD = 'Sistemas' where idD = 2";
-//
-//
-//                stmt.executeUpdate(insertarDB);
-//                System.out.println("Datos insertados correctamentes");
-//
-//                insertarDB = "delete from empleado where idE = 1"; 
-//                stmt.executeUpdate(insertarDB);
-//                //stmt.ex
-//                System.out.println("Datos insertados correctamentes");
-
-                
-               String insertarDB = "select * from qatar.departamento where dpto='Logística'; ";
+	        String insertarDB = "insert into `qatar`.`empleado`  values ('6', '33224', 'Azul', 'Martinez', 'Argentina', 'Sistemas')";
                 stmt.executeUpdate(insertarDB);
                 System.out.println("Datos insertados correctamentes");
-                
-                
+
+                insertarDB = "update departamento set nomD = 'Sistemas' where idD = 2";
+
+
+                stmt.executeUpdate(insertarDB);
+                System.out.println("Datos insertados correctamentes");
+
+                insertarDB = "delete from empleado where idE = 1"; 
+                stmt.executeUpdate(insertarDB);
+                //stmt.ex
+                System.out.println("Datos insertados correctamentes");
+
+
                 
                 
             }          }catch(Exception e){
